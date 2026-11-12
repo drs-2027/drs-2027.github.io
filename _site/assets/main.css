@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap");
 /**
  * Reset some basic elements
  */
@@ -12,7 +13,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 400 16px/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -646,4 +647,137 @@ table td {
   color: #099;
 }
 
-/*# sourceMappingURL=main.css.map */
+body {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/stars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-content .wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.site-title,
+.site-title:visited {
+  color: #ffffff;
+}
+
+.site-subtitle {
+  text-align: center;
+  font-size: 1.7em;
+  color: #ffffff;
+  margin: -1px 0 5px;
+}
+
+.site-nav .page-link {
+  display: inline-block;
+  font-size: 1.15em;
+  color: #ffc2e2;
+  padding: 6px 14px;
+  border: 1.5px solid #ffc2e2;
+  border-radius: 8px;
+  line-height: 1.4;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.site-nav .page-link:hover {
+  background-color: #ffc2e2;
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.site-nav .menu-icon svg path {
+  fill: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    background-color: #1a1a2e;
+    border-color: #444444;
+  }
+}
+@media (min-width: 601px) {
+  .site-nav {
+    line-height: normal;
+    padding: 10px 0;
+  }
+  .site-nav .trigger {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .site-nav .page-link {
+    display: block;
+    margin: 6px 10px;
+  }
+}
+.site-footer,
+.footer-heading {
+  color: #dddddd;
+}
+
+.site-footer a {
+  color: #ffc2e2;
+}
+
+.image-credit {
+  font-size: 0.8em;
+}
+
+.site-title {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 601px) {
+  .site-nav {
+    float: none;
+  }
+  .site-nav .trigger {
+    justify-content: center;
+  }
+}
+.site-title {
+  font-size: 3em;
+}
+
+.footer-stack p {
+  margin-bottom: 6px;
+}
+
+.footer-title {
+  font-size: 1.1em;
+}
+
+.footer-coc {
+  margin-top: 24px;
+}
+
+.site-header {
+  padding-top: 80px;
+  border-top: none;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding-top: 30px;
+  }
+}
+.site-title,
+.site-subtitle,
+.site-nav .page-link,
+.footer-title,
+h1, h2, h3 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+}
